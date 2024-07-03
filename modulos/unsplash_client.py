@@ -1,7 +1,7 @@
 import requests
-import modulos.config as config
+import config
 
-def get_unsplash_images(query, count=3):
+def get_unsplash_images(query, count=1):
     url = f"https://api.unsplash.com/search/photos?query={query}&per_page={count}"
     headers = {
         "Authorization": f"Client-ID {config.UNSPLASH_ACCESS_KEY}"
@@ -10,3 +10,4 @@ def get_unsplash_images(query, count=3):
     data = response.json()
     images = [result["urls"]["regular"] for result in data["results"]]
     return images
+

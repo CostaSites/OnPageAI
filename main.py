@@ -1,7 +1,15 @@
+from dotenv import load_dotenv
+import os
 from jinja2 import Template
-import modulos.config as config
 from modulos.openai_client import generate_text
 from modulos.unsplash_client import get_unsplash_images
+
+load_dotenv()
+
+OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
+UNSPLASH_ACCESS_KEY = os.getenv('UNSPLASH_ACCESS_KEY')
+TERMS = ["digital marketing", "SEO services", "content marketing"]
+
 
 def create_landing_page(terms):
     # Generate text for the landing page
