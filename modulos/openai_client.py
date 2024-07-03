@@ -1,5 +1,5 @@
 import openai
-import config
+import modulos.config as config
 
 openai.api_key = config.OPENAI_API_KEY
 

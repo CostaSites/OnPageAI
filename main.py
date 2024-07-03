@@ -1,7 +1,7 @@
 from jinja2 import Template
-import config
-from openai_client import generate_text
-from unsplash_client import get_unsplash_images
+import modulos.config as config
+from modulos.openai_client import generate_text
+from modulos.unsplash_client import get_unsplash_images
 
 def create_landing_page(terms):
     # Generate text for the landing page

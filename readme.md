@@ -10,3 +10,7 @@ A ideia central do OnPageAI é simplificar e automatizar o processo de criação
 
 - **Criação Automática de Landing Pages:** Utilizando a IA GPT, o OnPageAI gera textos e estruturas de páginas que são persuasivos e alinhados com as melhores práticas de marketing digital.
 - **Integração com APIs de Imagens:** O sistema conecta-se a bancos de imagens, selecionando e inserindo automaticamente imagens de alta qualidade que complementam o conteúdo gerado e aumentam a atratividade visual da página.
+
+### env modelo
+OPENAI_API_KEY=your_openai_api_key
+UNSPLASH_ACCESS_KEY=your_unsplash_access_key
