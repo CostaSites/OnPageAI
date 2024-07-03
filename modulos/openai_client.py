@@ -1,9 +1,7 @@
 from openai import OpenAI
-import config
+from config import OPENAI_API_KEY, UNSPLASH_ACCESS_KEY, TERMS
 
-client = OpenAI(api_key=config.OPENAI_API_KEY)
-import config
-
+client = OpenAI(api_key=OPENAI_API_KEY)
 
 def generate_text(prompt):
     response = client.chat.completions.create(model="gpt-3.5-turbo",
@@ -13,3 +11,4 @@ def generate_text(prompt):
     ],
     max_tokens=500)
     return response.choices[0].message.content.strip()
+
